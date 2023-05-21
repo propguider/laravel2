@@ -25,15 +25,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
- Route::get('/',function(){
+ Route::get('/collegestud',function(){
  $collegestud = collegestud::find(2)->role;
   dd($collegestud);
   });
 
-  Route::get('/',[postcontroller::class,'post']);
+  Route::get('/post',[postcontroller::class,'post']);
 
-  Route::get('/',[categoriescontroller::class,'category']);
+  Route::get('/category',[categoriescontroller::class,'category']);
 
-  Route::get('/',[commentcontroller::class,'comment']);
+  Route::get('/comment',[commentcontroller::class,'comment']);
 
-  Route::get('/',[tagcontroller::class,'tag']);
+  Route::get('/tag',[tagcontroller::class,'tag']);

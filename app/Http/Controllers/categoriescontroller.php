@@ -11,7 +11,7 @@ class categoriescontroller extends Controller
     {
         $category = category::find(1);
         $item = $category->items;
-        dd($item);
+        return $item;
 
     }
 }
