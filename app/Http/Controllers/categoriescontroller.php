@@ -9,7 +9,7 @@ class categoriescontroller extends Controller
 {
     public function category()
     {
-        $category = category::find(1);
+        $category = category::find(2);
         $item = $category->items;
          return$item;
 

@@ -9,7 +9,7 @@ class postcontroller extends Controller
 {
   public function post()
   {
-   $post = post::find(1)->comments;
-   dd($post);
+   $post = post::find(2)->comments;
+   return$post;
   }
 }

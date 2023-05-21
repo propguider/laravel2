@@ -5,10 +5,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\studentController;
 
-use App\models\employee;
-
-use Illuminate\Support\Facades\response;
-use APP\Http\Controllers\myuploads;
 
 
 /*

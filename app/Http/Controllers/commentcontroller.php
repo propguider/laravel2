@@ -12,7 +12,7 @@ class commentcontroller extends Controller
 {
     public function comment()
     {
-      $post = poster::find(1);
+      $post = poster::find(2);
       $comment  = new commenter;
       $comment->body = 'hi this is a good poster';
       $post->commenters()->save($comment);
