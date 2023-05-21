@@ -15,8 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('role',50);
             $table->unsignedBigInteger('collegestuds_id');
-            $table->foreign('collegestuds_id')->references('id')->on('collegestuds')
-            ->delete('cascade');
+            $table->foreign('collegestuds_id')->references('id')->on('collegestuds');
             $table->timestamps();
         });
     }

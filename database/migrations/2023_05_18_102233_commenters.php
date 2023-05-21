@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('commenters', function (Blueprint $table) {
             $table->id();
             $table->string('body');
-            $table->integer('commentable_id');
+            $table->integer('commentable_id',50);
             $table->string('commentable_type');
             $table->timestamps();
         });

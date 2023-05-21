@@ -13,7 +13,7 @@ class category extends Model
 
     public function items():hasManyThrough
     {
-        return $this->hasManyThrough(item::class,type::class);
+        return $this->hasManyThrough(item::class,type::class,);
 
     }
 

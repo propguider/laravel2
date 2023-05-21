@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('taggables', function (Blueprint $table) {
             $table->id();
-            $table->integer('tag_id');
+            $table->integer('tag_id',16);
             $table->integer('taggable_id');
             $table->string('taggable_type');
             $table->timestamps();
